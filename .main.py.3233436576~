@@ -34,6 +34,26 @@ if dOW == "door":
         wOO = input("Do you go ou the window or try and find another way out?(window/find): ")
         if wOO == "window":
           prisonBreakSecondChoiceClimb()
+          iOC = input("Do swim back to the island or ty and swim to the city on the horizon?(island/city): ")
+            if iOC == "island":
+              prisionBreakThirdChoiceIsland()
+              rOF == input("Do you want to run away from the spotlight or stay where you are. (run/frezze): ")
+              if rOF == "run":
+                prisonBreakRunAway()
+            elif iOC == "city":
+              prisonBreakThirdChoiceCity()
+              eOM = input("Do you want to enter the city in the middle of the shore or on the side of the shore. (middle/side): ")
+              if eOM == "middle":
+                prisionBreakMiddle()
+              elif eOM == "side":
+                prisonBreakSide()
+          elif cOD == "door":
+            prisonBreakFirstChoiceDoor()
+            oOT = input("Do you want to try to steal the gaurd's keys or ask where you are?(steal/ask): ")
+            if oOT == "steal":
+              prisonBreakAfterDoorChoiceSteal()
+            elif oOT == "ask":
+              prisonBreakAfterDoorChoiceAsk()
         elif wOO == "find":
           print("You can't find another way out so you use the window.")
           prisonBreakSecondChoiceClimb()
