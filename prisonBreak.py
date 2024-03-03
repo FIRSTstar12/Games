@@ -5,27 +5,27 @@ def prisonBreakMainStoyLine():
   print("You wake up in a dark one window room with a bared door.")
   print("your head aches and you feel like you have been knocked out for a while.")
   print("You go and look out the window and endless ocean.")
-  print("You seem to be mulitple stories up.")
+  print("You seem to be mulitple stories up.\n")
 #door
 def prisonBreakFirstChoiceDoor():
   #first choice
     print("You try to open the door but it is locked.\nYou try to break it down but it is too strong.")
     print("A guard hear's you and rushes to your cell.")
     print("Guard: You are going to be in a cell for a long time.\n So don't even think of trying to escape.")
-    print("The way you see it you have 2 options: \n1) try to steal the gaurd's keys or \n2) ask where you are.")
+    print("The way you see it you have 2 options: \n1) try to steal the gaurd's keys or \n2) ask where you are.\n")
 def prisonBreakAfterDoorChoiceSteal():
   num = random.randint(1,2)
   if num == 1:
     print("You try to steal the gaurd's keys but he catches you and you are sent to solitary confinement.")
     print("Game over.")
-    return False
+    return 1
   else:
     print("You try to steal the gaurd's keys and you succeed.")
     print("You carefully open the door and shut it behind you as quitly as you can.")
-    print("Your in the middle of a short hallway with a door on the left and a door on the right.")
-    return True
+    print("Your in the middle of a short hallway with a door on the left and a door on the right.\n")
+    return 2
 def prisonBreakLeftHallway():
-  print("You go through the door on the left and you see a fellow inmate. \nYou and the inmate lock eyes for just a moment.")
+  print("You go through the door on the left and don't see anyone, just a window.\n")
 def prisionBreakRightHallway():
   print("You go through the door on the right and you see 2 doors. \nOne leads to the stairs and the other leads to the eleivator.")
 def prisionBreakBoat():
