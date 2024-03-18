@@ -31,7 +31,10 @@ from Atlantis import shark
 from Atlantis import eels
 from Atlantis import treasure
 from Atlantis import run
+#Sports imports
+from extremSports import mainStoryLineSports
 
+'''
 game = input('What game do you want to play? (Prison Break of Atlantis): ')
 
 if game == "Prison Break":
@@ -213,3 +216,4 @@ elif game == "Atlantis":
     elif oNT == "right":
       cave2()
       shark()
+'''
